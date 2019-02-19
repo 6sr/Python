@@ -6,7 +6,7 @@ import smtplib, ssl     # For Security
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-passwordChoice = input("Do your password to be shown on screen Y/N ")
+passwordChoice = input("Do you want your password to be shown on screen Y/N ")
 
 mailServer = input("Type mail server and press Enter :")
 CSVFileName = input("Type csv file name and press Enter :")
@@ -25,45 +25,22 @@ message["From"] = sender_email                  # Enter Email id from which you 
 text1 = """
 Hi """
 text2 = """,
-We have campaigns of many big brands & startups who want to promote their brand through you.
-
-We have brands like AXE Ticket, Myntra, Amazon, Oneplus6, Samsung, Azar etc. They are looking for either a product/app review or a 20-30 second promotion on YouTube or a simple promotion on other social media channels(Fb, Twitter, Instagram) the budget or pay will vary in both promotions.
-
-If you are interested please share your pricing(that is the amount you charge per review/promotion) and your contact no. (WhatsApp no.) so that we can discuss further details.
-
-Besides sponsorships, we also provide many other features to youtubers like affiliate marketing, event promotions etc.
-
-Please fill the form given in the below link:-
-
-https://goo.gl/forms/pIrEZxYNHNb9azSm2
-
-
-If you have any query you can contact me at 9560750624 , 9917486405.
-
-Thank you
-
-Team GryNow
-
-www.grynow.com"""
+How are you?
+Not seen you since long
+Sachin
+"""
 
 html1 = """
 <html>
   <body>
-    <img src="https://i.postimg.cc/W3C0FPFK/1.png">
+    <img src="https://i.postimg.cc/RCDr27GC/Hello.png">
 
 
     <p>Hi """
 html2 = """,<br>
-We have campaigns of many big brands & startups who want to promote their brand through you.
-<br><br>We have brands like AXE Ticket, Myntra, Amazon, Oneplus6, Samsung, Azar etc. They are looking for either a product/app review or a 20-30 second promotion on YouTube or a simple promotion on other social media channels(Fb, Twitter, Instagram) the budget or pay will vary in both promotions.
-<br><br>If you are interested please share your <b>pricing</b>(that is the amount you charge per review/promotion) and your <b>contact no.</b> (WhatsApp no.) so that we can discuss further details.
-<br>Besides sponsorships, we also provide many other features to youtubers like affiliate marketing, event promotions etc.
-<br><br><br><b>Please fill the form given in the below link:- </b>
-<br><a href="https://goo.gl/forms/pIrEZxYNHNb9azSm2">https://goo.gl/forms/pIrEZxYNHNb9azSm2</a>
-<br><br>If you have any query you can contact me at 9560750624 , 9917486405.
-<br><br>Thank you
-<br>Team GryNow
-<br><a href="www.grynow.com">www.grynow.com</a>
+How are you?
+<br>Not seen you since long
+<br><br><b>Sachin</b>
   </body>
 </html>"""
 
