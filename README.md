@@ -10,6 +10,3 @@ Libraries used:
 
 This code builds a secure ssl connection to mail server
 SMTP_SSL() is used to build secure connection to port 465
-
-# WeatherForecast
-It gives weather of a place
