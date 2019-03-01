@@ -1,4 +1,4 @@
-# Sachin
+# SendPersonalizedMail
 This is python code to send mails to recipients mail id stored in csv format file
 
 Libraries used:
@@ -10,3 +10,6 @@ Libraries used:
 
 This code builds a secure ssl connection to mail server
 SMTP_SSL() is used to build secure connection to port 465
+
+# WeatherForecast
+It gives weather of a place
