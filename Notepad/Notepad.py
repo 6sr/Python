@@ -79,6 +79,9 @@ class Notepad:
 		# Adding Save option
 		self.NotepadFileMenu.add_command(label="Save", command=self.saveFile)
 
+		# Adding Run option
+		self.NotepadFileMenu.add_command(label="Run", command=self.runFile)
+
 		# To create a line in the dialog
 		self.NotepadFileMenu.add_separator()
 
@@ -152,6 +155,9 @@ class Notepad:
 			file = open(self.file,"w")
 			file.write(self.NotepadTextArea.get(1.0,END))
 			file.close()
+
+	def runFile(self):
+		exec(self.NotepadTextArea.get(1.0,END))
 
 	def quitApplication(self):
 		self.master.destroy()
